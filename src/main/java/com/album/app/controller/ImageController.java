@@ -1,7 +1,7 @@
 package com.album.app.controller;
 
+import com.album.app.service.IPhotoService;
 import com.album.common.result.RR;
-import com.album.common.util.FastDFSUtil;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,13 +19,13 @@ import org.springframework.web.multipart.MultipartFile;
 public class ImageController {
 
     @Autowired
-    private FastDFSUtil fastDFSUtil;
+    private IPhotoService photoService;
 
     // 上传文件
     @PostMapping
     @ApiOperation("上传图片")
-    public RR<String> upload(MultipartFile file){
-        String fileUrl= fastDFSUtil.uploadFile(file);
+    public RR<String> upload(MultipartFile file) {
+        String fileUrl = photoService.uploadPhoto(file);
         return RR.ok(fileUrl);
     }
 }

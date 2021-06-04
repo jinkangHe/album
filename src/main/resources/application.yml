@@ -10,3 +10,21 @@ params:
 server:
   port: 80
 
+
+
+spring:
+  datasource:
+      druid:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://101.37.76.215:3307/online_album?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&&rewriteBatchedStatements=true
+          username: root
+          password: 123456
+  servlet:
+    multipart:
+      location: D:/upload_tmp
+
+
+
+
+
+

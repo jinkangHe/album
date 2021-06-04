@@ -1,0 +1,12 @@
+fdfs:
+  soTimeout: 1500
+  connectTimeout: 600
+  trackerList: 101.37.76.215:22122  #tracker路径，TrackerList参数,支持多个
+
+params:
+  fastdfs:
+    rootUrl: 101.37.76.215:8888/
+
+server:
+  port: 80
+

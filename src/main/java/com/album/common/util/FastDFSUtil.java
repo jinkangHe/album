@@ -40,4 +40,6 @@ public class FastDFSUtil {
         String fileUrl = rootPath + storePath.getFullPath();
         return fileUrl;
     }
+
+
 }

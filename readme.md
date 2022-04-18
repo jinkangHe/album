@@ -1,1 +1,2 @@
 配置文件相相关地址已失效
+相关API主要在FastFileStorageClient 这个类提现
